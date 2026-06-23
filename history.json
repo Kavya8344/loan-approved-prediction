@@ -1,0 +1,30 @@
+[
+    {
+        "income": 70000.0,
+        "credit_score": 749.0,
+        "loan_amount": 11999.0,
+        "years_employed": 15.0,
+        "result": "Approved"
+    },
+    {
+        "income": 70000.0,
+        "credit_score": 650.0,
+        "loan_amount": 12000.0,
+        "years_employed": 15.0,
+        "result": "Approved"
+    },
+    {
+        "income": 70000.0,
+        "credit_score": 600.0,
+        "loan_amount": 12000.0,
+        "years_employed": 15.0,
+        "result": "Approved"
+    },
+    {
+        "income": 70000.0,
+        "credit_score": 550.0,
+        "loan_amount": 12000.0,
+        "years_employed": 15.0,
+        "result": "Rejected"
+    }
+]

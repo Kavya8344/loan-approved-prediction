@@ -1,96 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loan Prediction System</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #eef2f3;
-            height: 100vh;
-            overflow-y: hidden;
-        }
-        header {
-            background-color: #2e3a59;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        section {
-            padding: 20px;
-            margin: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .buttonGroup {
-            width: 100vw;
-            display: flex;
-            justify-content: center;
-            gap: 3rem;
-            position: relative;
-        }
-        .buttonGroup button {
-            font-size: 1rem;
-            padding: 0.7rem 1.5rem;
-            border-radius: 6px;
-            border: 1px solid #2e3a59;
-            background-color: white;
-            color: #2e3a59;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        .buttonGroup button:hover {
-            background-color: #2e3a59;
-            color: white;
-        }
-        .loan-img {
-            width: 100vw;
-            z-index: -2;
-            position: absolute;
-            top: 0;
-            left: 0;
-            opacity: 0.25;
-        }
-        footer {
-            background-color: #2e3a59;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Loan Approval Prediction</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+body{
+    background: linear-gradient(135deg,#0f172a,#1e3a8a);
+    color:white;
+    min-height:100vh;
+}
+
+.navbar{
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(10px);
+}
+
+.hero{
+    min-height:80vh;
+    display:flex;
+    align-items:center;
+}
+
+.card-custom{
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(15px);
+    border:none;
+    border-radius:20px;
+    color:white;
+    transition:0.3s;
+}
+
+.card-custom:hover{
+    transform:translateY(-5px);
+}
+
+.btn-custom{
+    padding:12px 30px;
+    border-radius:30px;
+}
+
+footer{
+    background:#020617;
+    text-align:center;
+    padding:15px;
+}
+
+</style>
+
 </head>
 <body>
 
-<header>
-    <h1>old Bike price Prediction System</h1>
-</header>
+<nav class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
 
-<section>
-    <h2>About</h2>
-    <p>
-        Welcome to the Loan Prediction System — a smart tool that helps you determine loan approval chances 
-        based on applicant details such as income, credit history, and loan amount. 
-        Our model uses Machine Learning to make accurate and fast predictions.
-    </p>
+<a class="navbar-brand fw-bold" href="/">Loan Predictor</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="/">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="/project">Predict</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="/history">History</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="/about">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="/contact">Contact</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+</nav>
+
+<section class="hero">
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-md-6">
+
+<h1 class="display-4 fw-bold">
+Loan Approval Prediction System
+</h1>
+
+<p class="lead mt-3">
+Predict loan approval instantly using Machine Learning.
+Analyze income, credit score, loan amount, and employment history to determine eligibility.
+</p>
+
+<div class="mt-4">
+
+<a href="/project" class="btn btn-success btn-custom">
+Check Eligibility
+</a>
+
+<a href="/about" class="btn btn-outline-light btn-custom">
+Learn More
+</a>
+
+</div>
+
+</div>
+
+<div class="col-md-6 text-center">
+
+<img src="{{ url_for('static', filename='loan.png') }}"
+class="img-fluid"
+width="500">
+
+</div>
+
+</div>
+
+</div>
 </section>
 
-<div class="buttonGroup">
-    <a href="/project"><button>Check Loan Eligibility</button></a>
-    <a href="/contact"><button>Contact Us</button></a>
-    <a href="/about"><button>About</button></a>
-    <img src="{{url_for ('static',filename='bike.jpg')}}" alt="Loan Image" class="loan-img">
+<div class="container mb-5">
+
+<div class="row g-4">
+
+<div class="col-md-3">
+<div class="card card-custom p-4 text-center">
+<h3>98%</h3>
+<p>Model Accuracy</p>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card card-custom p-4 text-center">
+<h3>5</h3>
+<p>Features Used</p>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card card-custom p-4 text-center">
+<h3>1 Sec</h3>
+<p>Instant Prediction</p>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card card-custom p-4 text-center">
+<h3>100%</h3>
+<p>Secure Processing</p>
+</div>
+</div>
+
+</div>
+
 </div>
 
 <footer>
-    <p>&copy; 2024 Loan Prediction System. All rights reserved.</p>
+<p>© 2026 Loan Approval Prediction System | Flask + Machine Learning</p>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
