@@ -1,107 +1,247 @@
-# Loan Approval Prediction - Data Preprocessing & EDA
+# 🏦 Loan Approval Prediction System
 
-## Project Overview
+A Machine Learning powered web application that predicts whether a loan application is likely to be approved based on applicant financial information.
 
-This project focuses on data cleaning, preprocessing, and exploratory data analysis (EDA) for a loan approval dataset.
-
-The objective is to prepare the dataset for machine learning models that can predict whether a loan application will be approved based on applicant information such as income, credit score, employment history, and loan amount.
+Built using **Python, Flask, Scikit-Learn, HTML, CSS, and Bootstrap**.
 
 ---
 
-## Dataset Features
+## 📌 Project Overview
 
-* Income
-* Credit Score
-* Loan Amount
-* Years Employed
-* Points
-* Loan Approved (Target Variable)
+The Loan Approval Prediction System helps evaluate loan eligibility using Machine Learning algorithms trained on applicant financial data.
 
-### Removed Features
+The system analyzes:
 
-The following columns were removed during preprocessing:
+- 💰 Income
+- 📈 Credit Score
+- 🏦 Loan Amount
+- 💼 Years Employed
 
-* Name
-* City
+and predicts whether the loan application is:
 
-These columns were treated as non-informative identifiers and were not expected to contribute significantly to loan approval prediction.
+✅ Approved
 
----
+or
 
-## Data Preprocessing
+❌ Rejected
 
-The following preprocessing steps were performed:
-
-* Data inspection using Pandas
-* Missing value analysis
-* Duplicate record detection
-* Feature selection
-* Target variable preparation
-* Data quality checks
+The application also maintains a prediction history for previously submitted applications.
 
 ---
 
-## Exploratory Data Analysis (EDA)
+## 🚀 Features
 
-Visualizations included:
-
-* Histograms
-* Boxplots
-* Scatterplots
-* Loan approval distribution analysis
-* Correlation analysis
-
-The visualizations help identify:
-
-* Feature distributions
-* Potential outliers
-* Relationships between variables
-* Factors associated with loan approval
+- ⚡ Real-Time Loan Approval Prediction
+- 📊 Machine Learning Integration
+- 📜 Prediction History Tracking
+- 🎨 Modern Responsive User Interface
+- 🌐 Flask Web Application
+- 📱 Mobile-Friendly Design
+- 🔒 Secure Local Processing
 
 ---
 
-## Technologies Used
+## 🛠 Technologies Used
 
-* Python
-* Pandas
-* NumPy
-* Matplotlib
-* Seaborn
-* Scikit-learn
-* Jupyter Notebook
+### 🔹 Backend
+
+- Python
+- Flask
+- Joblib
+
+### 🔹 Machine Learning
+
+- Scikit-Learn
+- Pandas
+- NumPy
+
+### 🔹 Frontend
+
+- HTML5
+- CSS3
+- Bootstrap 5
 
 ---
 
-## Project Structure
+## 📊 Dataset Information
+
+The dataset contains financial and employment-related information used to predict loan approval status.
+
+### Features Used
+
+| Feature | Description |
+|----------|-------------|
+| Income | Applicant Annual Income |
+| Credit Score | Applicant Credit Rating |
+| Loan Amount | Requested Loan Amount |
+| Years Employed | Employment Experience |
+| Loan Approved | Target Variable |
+
+### Dataset Size
+
+- 📁 Total Records: **2000**
+- 📈 Features Used: **4**
+- 🎯 Target Variable: **Loan Approved**
+
+---
+
+## 🤖 Machine Learning Models Evaluated
+
+### Logistic Regression
+
+| Metric | Score |
+|----------|----------|
+| Test Accuracy | 88.25% |
+| Train Accuracy | 91.25% |
+
+### Support Vector Machine (SVM)
+
+| Metric | Score |
+|----------|----------|
+| Test Accuracy | 59.75% |
+| Train Accuracy | 63.00% |
+
+### Decision Tree Classifier
+
+| Metric | Score |
+|----------|----------|
+| Test Accuracy | 96.25% |
+| Train Accuracy | 100.00% |
+
+### Tuned Decision Tree Classifier
+
+| Metric | Score |
+|----------|----------|
+| Test Accuracy | 93.75% |
+| Train Accuracy | 97.94% |
+
+---
+
+## 🏆 Final Model Used
+
+The deployed model is a **Tuned Decision Tree Classifier** trained using:
+
+- 💰 Income
+- 📈 Credit Score
+- 🏦 Loan Amount
+- 💼 Years Employed
+
+### Final Model Performance
+
+| Metric | Score |
+|----------|----------|
+| Test Accuracy | 93.75% |
+| Train Accuracy | 97.94% |
+
+This model was selected because it provides an excellent balance between predictive performance and generalization.
+
+---
+
+## 📂 Project Structure
 
 ```text
-loan-approval-prediction/
+Loan-Approval-Prediction/
 │
-├── loan.ipynb
-├── loan_approval.csv
-├── README.md
+├── app.py
+├── history.json
+├── requirements.txt
+│
+├── model/
+│   └── best_model.lb
+│
+├── templates/
+│   ├── index.html
+│   ├── project.html
+│   ├── history.html
+│   ├── about.html
+│   └── contact.html
+│
+├── static/
+│   └── loan.png
+│
+└── loan_approval.csv
 ```
 
 ---
 
-## Feature and Target Separation
+## 📦 Required Packages
 
-```python
-X = df.drop('loan_approved', axis=1)
-y = df['loan_approved']
+Install all dependencies using:
+
+```bash
+pip install -r requirements.txt
+```
+
+### requirements.txt
+
+```text
+Flask
+pandas
+numpy
+scikit-learn
+joblib
 ```
 
 ---
 
-## Future Improvements
+## ⚙️ Installation
 
-* Feature scaling
-* Train-test split
-* Logistic Regression
+### Clone Repository
 
+```bash
+git clone https://github.com/Kavya8344/loan-approved-prediction
+```
+
+### Navigate to Project Directory
+
+```bash
+cd Loan-Approval-Prediction
+```
+
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Run Application
+
+```bash
+python app.py
+```
 
 ---
 
-## Author
+## 🌐 Open in Browser
 
-Kavya Sharma
+```text
+http://127.0.0.1:5000
+```
+
+---
+
+## 👨‍💻 Developer
+
+### Kavya Sharma
+
+Machine Learning & Flask Developer
+
+---
+
+## 📄 License
+
+This project is developed for educational and learning purposes.
+
+---
+
+## ⭐ Support
+
+If you found this project useful, consider giving it a star on GitHub.
+
+⭐ Star the Repository  
+🍴 Fork the Repository  
+📢 Share with Others
+
+---
+
+Made with ❤️ using Python, Flask, and Machine Learning.
