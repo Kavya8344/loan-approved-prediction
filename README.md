@@ -1,4 +1,4 @@
-# 🏦 Loan Approval Prediction System
+# Loan Approval Prediction System
 
 A Machine Learning powered web application that predicts whether a loan application is likely to be approved based on applicant financial information.
 
@@ -6,138 +6,142 @@ Built using **Python, Flask, Scikit-Learn, HTML, CSS, and Bootstrap**.
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 The Loan Approval Prediction System helps evaluate loan eligibility using Machine Learning algorithms trained on applicant financial data.
 
 The system analyzes:
 
-- 💰 Income
-- 📈 Credit Score
-- 🏦 Loan Amount
-- 💼 Years Employed
+* Income
+* Credit Score
+* Loan Amount
+* Years Employed
 
 and predicts whether the loan application is:
 
-✅ Approved
-
-or
-
-❌ Rejected
+* Approved
+* Rejected
 
 The application also maintains a prediction history for previously submitted applications.
 
 ---
 
-## 🚀 Features
+## Features
 
-- ⚡ Real-Time Loan Approval Prediction
-- 📊 Machine Learning Integration
-- 📜 Prediction History Tracking
-- 🎨 Modern Responsive User Interface
-- 🌐 Flask Web Application
-- 📱 Mobile-Friendly Design
-- 🔒 Secure Local Processing
-
----
-
-## 🛠 Technologies Used
-
-### 🔹 Backend
-
-- Python
-- Flask
-- Joblib
-
-### 🔹 Machine Learning
-
-- Scikit-Learn
-- Pandas
-- NumPy
-
-### 🔹 Frontend
-
-- HTML5
-- CSS3
-- Bootstrap 5
+* Real-Time Loan Approval Prediction
+* Machine Learning Integration
+* Prediction History Tracking
+* Responsive User Interface
+* Flask Web Application
+* Mobile-Friendly Design
+* Secure Local Processing
 
 ---
 
-## 📊 Dataset Information
+## Technologies Used
+
+### Backend
+
+* Python
+* Flask
+* Joblib
+
+### Machine Learning
+
+* Scikit-Learn
+* Pandas
+* NumPy
+
+### Frontend
+
+* HTML5
+* CSS3
+* Bootstrap 5
+
+---
+
+## Dataset Information
 
 The dataset contains financial and employment-related information used to predict loan approval status.
 
 ### Features Used
 
-| Feature | Description |
-|----------|-------------|
-| Income | Applicant Annual Income |
-| Credit Score | Applicant Credit Rating |
-| Loan Amount | Requested Loan Amount |
-| Years Employed | Employment Experience |
-| Loan Approved | Target Variable |
+| Feature        | Description             |
+| -------------- | ----------------------- |
+| Income         | Applicant Annual Income |
+| Credit Score   | Applicant Credit Rating |
+| Loan Amount    | Requested Loan Amount   |
+| Years Employed | Employment Experience   |
+| Loan Approved  | Target Variable         |
 
 ### Dataset Size
 
-- 📁 Total Records: **2000**
-- 📈 Features Used: **4**
-- 🎯 Target Variable: **Loan Approved**
+* Total Records: **2000**
+* Features Used: **4**
+* Target Variable: **Loan Approved**
 
 ---
 
-## 🤖 Machine Learning Models Evaluated
+## Machine Learning Models Evaluated
 
 ### Logistic Regression
 
-| Metric | Score |
-|----------|----------|
-| Test Accuracy | 88.25% |
+| Metric         | Score  |
+| -------------- | ------ |
+| Test Accuracy  | 88.25% |
 | Train Accuracy | 91.25% |
 
 ### Support Vector Machine (SVM)
 
-| Metric | Score |
-|----------|----------|
-| Test Accuracy | 59.75% |
+| Metric         | Score  |
+| -------------- | ------ |
+| Test Accuracy  | 59.75% |
 | Train Accuracy | 63.00% |
 
 ### Decision Tree Classifier
 
-| Metric | Score |
-|----------|----------|
-| Test Accuracy | 96.25% |
+| Metric         | Score   |
+| -------------- | ------- |
+| Test Accuracy  | 95.75%  |
 | Train Accuracy | 100.00% |
 
 ### Tuned Decision Tree Classifier
 
-| Metric | Score |
-|----------|----------|
-| Test Accuracy | 93.75% |
+| Metric         | Score  |
+| -------------- | ------ |
+| Test Accuracy  | 93.75% |
 | Train Accuracy | 97.94% |
+
+### Random Forest Classifier
+
+| Metric         | Score  |
+| -------------- | ------ |
+| Test Accuracy  | 95.50% |
+| Train Accuracy | 98.38% |
 
 ---
 
-## 🏆 Final Model Used
+## Final Model Used
 
-The deployed model is a **Tuned Decision Tree Classifier** trained using:
+The deployed model is a **Random Forest Classifier** trained using:
 
-- 💰 Income
-- 📈 Credit Score
-- 🏦 Loan Amount
-- 💼 Years Employed
+* Income
+* Credit Score
+* Loan Amount
+* Years Employed
 
 ### Final Model Performance
 
-| Metric | Score |
-|----------|----------|
-| Test Accuracy | 93.75% |
-| Train Accuracy | 97.94% |
+| Metric         | Score  |
+| -------------- | ------ |
+| Test Accuracy  | 95.50% |
+| Train Accuracy | 98.38% |
 
-This model was selected because it provides an excellent balance between predictive performance and generalization.
+This model was selected as the best-performing model after comparing multiple machine learning algorithms.
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 Loan-Approval-Prediction/
@@ -164,7 +168,7 @@ Loan-Approval-Prediction/
 
 ---
 
-## 📦 Required Packages
+## Required Packages
 
 Install all dependencies using:
 
@@ -184,7 +188,7 @@ joblib
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 ### Clone Repository
 
@@ -212,7 +216,7 @@ python app.py
 
 ---
 
-## 🌐 Open in Browser
+## Open in Browser
 
 ```text
 http://127.0.0.1:5000
@@ -220,7 +224,7 @@ http://127.0.0.1:5000
 
 ---
 
-## 👨‍💻 Developer
+## Developer
 
 ### Kavya Sharma
 
@@ -228,20 +232,6 @@ Machine Learning & Flask Developer
 
 ---
 
-## 📄 License
+## License
 
 This project is developed for educational and learning purposes.
-
----
-
-## ⭐ Support
-
-If you found this project useful, consider giving it a star on GitHub.
-
-⭐ Star the Repository  
-🍴 Fork the Repository  
-📢 Share with Others
-
----
-
-Made with ❤️ using Python, Flask, and Machine Learning.
