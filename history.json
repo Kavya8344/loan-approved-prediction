@@ -26,5 +26,68 @@
         "loan_amount": 12000.0,
         "years_employed": 15.0,
         "result": "Rejected"
+    },
+    {
+        "income": 100000.0,
+        "credit_score": 500.0,
+        "loan_amount": 25000.0,
+        "years_employed": 5.0,
+        "result": "Rejected"
+    },
+    {
+        "income": 47000.0,
+        "credit_score": 745.0,
+        "loan_amount": 8000.0,
+        "years_employed": 15.0,
+        "result": "Approved"
+    },
+    {
+        "income": 70000.0,
+        "credit_score": 600.0,
+        "loan_amount": 15000.0,
+        "years_employed": 5.0,
+        "result": "Approved"
+    },
+    {
+        "income": 70000.0,
+        "credit_score": 750.0,
+        "loan_amount": 15000.0,
+        "years_employed": 2.0,
+        "result": "Approved"
+    },
+    {
+        "income": 70000.0,
+        "credit_score": 746.0,
+        "loan_amount": 25000.0,
+        "years_employed": 15.0,
+        "result": "Approved"
+    },
+    {
+        "income": 70000.0,
+        "credit_score": 750.0,
+        "loan_amount": 40000.0,
+        "years_employed": 15.0,
+        "result": "Approved"
+    },
+    {
+        "income": 80000.0,
+        "credit_score": 759.0,
+        "loan_amount": 25000.0,
+        "years_employed": 12.0,
+        "result": "Approved"
+    },
+    {
+        "income": 100000.0,
+        "credit_score": 550.0,
+        "loan_amount": 7.0,
+        "years_employed": 20.0,
+        "result": "Approved"
+    },
+    {
+        "income": 100000.0,
+        "credit_score": 550.0,
+        "loan_amount": 7000.0,
+        "years_employed": 12.0,
+        "result": "Rejected"
     }
 ]
