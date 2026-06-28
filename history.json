@@ -79,13 +79,6 @@
     {
         "income": 100000.0,
         "credit_score": 550.0,
-        "loan_amount": 7.0,
-        "years_employed": 20.0,
-        "result": "Approved"
-    },
-    {
-        "income": 100000.0,
-        "credit_score": 550.0,
         "loan_amount": 7000.0,
         "years_employed": 12.0,
         "result": "Rejected"
